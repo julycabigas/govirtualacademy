@@ -1,0 +1,17 @@
+.intro-area {
+    padding: 100px 0;
+
+    @include breakpoint(991) {
+        padding: 20px 0;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    .text {
+        @include breakpoint(991) {
+            padding: 0 !important;
+        }
+    }
+}

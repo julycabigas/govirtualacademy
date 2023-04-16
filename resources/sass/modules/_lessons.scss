@@ -1,0 +1,57 @@
+/* ==================================
+Lessons
+=================================== */
+.lesson-wrapper {
+    min-height: 450px;
+    padding-bottom: 40px;
+
+    background: $ligthBgColor;
+
+    @include breakpoint(600) {
+        padding-top: 0;
+    }
+    @include breakpoint(991) {
+        min-height: inherit;
+        padding-top: 40px;
+    }
+}
+.lesson-list {
+    margin-bottom: 40px;
+}
+.lesson-header {
+    display: flex;
+    min-height: 50px;
+    padding: 30px 0 20px 0;
+
+    text-align: center;
+    text-align: left;
+
+
+    h1 {
+        margin: 0;
+
+        font-size: 25px;
+        font-weight: 600;
+
+        color: $dark;
+    }
+    p {
+        margin: 0;
+
+        font-size: 17px;
+
+        color: #9c9999;
+        span {
+            display: inline-block;
+            padding: 3px 15px;
+            margin-top: 6px;
+
+            font-size: 15px;
+
+            color: $darkerColor;
+            border: 1px dotted #efecec;
+            border-radius: 3px;
+            background: #fff;
+        }
+    }
+}

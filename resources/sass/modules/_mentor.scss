@@ -1,0 +1,42 @@
+.single-mentor {
+    display: block;
+    margin-bottom: 30px;
+    border: 1px solid #ececec;
+	transition: all .3s;
+	border-radius: 3px;
+	background: #fff;
+
+	.course-thumb-area {
+	    height: 100px;
+	}
+	.course-content {
+	    position: relative;
+	    min-height: 100px;
+	    padding: 10px;
+	    color: #323233;
+	    background: #fff;
+
+	    h4 {
+	    	margin: 0;
+	    	font-weight: 700;
+	    	font-size: 22px;
+	    }
+	    .info-block {
+			margin-bottom: 6px;
+		}
+		.about {
+			padding: 10px;
+		}
+	}
+    .image {
+	    width: 120px;
+	    height: 120px;
+	    background: #f5f5f5;
+	    border-radius: 50%;
+	    overflow: hidden;
+	    margin: -75px auto 10px auto;
+	}
+	.info {
+		text-align: center;
+	}
+}

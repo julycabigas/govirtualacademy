@@ -1,0 +1,74 @@
+/* ==================================
+Widget
+=================================== */
+.widget {
+    margin-bottom: 20px;
+
+    &-title {
+        padding: 14px 10px;
+
+        background: $primaryColor;
+        h2 {
+            margin: 0;
+
+            font-size: 16px;
+
+            color: #fff;
+        }
+    }
+    i {
+        display: inline-block;
+        width: 17px;
+
+        font-size: 12px;
+
+        color: $newcolor3;  
+        transition: color 0.3s ease;
+
+    }
+    > ul {
+        margin: 0;
+        > li {
+
+            &:hover {
+                i {
+                    color: $newcolor2;
+                }
+            }
+            a {
+                display: block;
+                display: block;
+                padding: 10px 10px 5px 0;
+                
+                font-weight: 600;
+
+                color: #f4f1f1;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+
+                    background: #e5f1f7;
+                }
+            }
+            &:hover {
+                color: $primaryColor !important;
+            }
+
+            .sub-menu {
+                li {
+                    a {
+                        padding: 5px 0 5px 24px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #a0a5ab;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

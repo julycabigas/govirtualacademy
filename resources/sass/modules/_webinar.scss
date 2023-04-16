@@ -1,0 +1,40 @@
+.single-webinar {
+    padding: 20px;
+    background: #fdfdfd;
+    box-shadow: 0 13px 20px #f1eeee;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid#f9cb91;
+    margin-bottom: 30px;
+
+    .img-wrap {
+        width: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        @include breakpoint(699) {
+                width: 100%;
+        }
+    }
+    .inner-box {
+        width: calc(100% - 350px);
+        padding: 20px;
+        
+        .host {
+            color: #f6961e;
+        }
+        .text {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint(699) {
+                width: 100%;
+        }
+    }
+}

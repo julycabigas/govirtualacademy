@@ -1,0 +1,9 @@
+.single-training {
+    margin: 40px 0;
+
+    .image {
+    	@include breakpoint(767) {
+			padding: 0;
+    	}
+    }
+}

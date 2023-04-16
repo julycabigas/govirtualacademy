@@ -1,0 +1,22 @@
+/* ==================================
+Contact
+=================================== */
+.contact-form {
+    padding: 30px;
+
+    border: 1px solid #f3f3f3;
+    background: #fff;
+
+    @include breakpoint(767) {
+        margin-top: 10px;
+    }
+}
+.contact-info {
+    font-size: 18px;
+
+    h4 {
+        margin-bottom: 20px;
+
+        line-height: 1.5;
+    }
+}

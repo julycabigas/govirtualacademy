@@ -1,0 +1,14 @@
+/* ==================================
+Cart 
+=================================== */
+.cart-area {
+    min-height: 550px;
+    h1 {
+        font-size: 22px;
+
+        color: $primaryColor;
+    }
+    .cart-area .btn {
+        margin-bottom: 6px;
+    }
+}

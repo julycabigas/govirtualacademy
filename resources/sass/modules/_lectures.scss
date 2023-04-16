@@ -1,0 +1,99 @@
+/* ==================================
+Lecture
+=================================== */
+.lectures-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+}
+.lecture-item {
+    display: flex;
+    width: 100%;
+    padding: 3px 0;
+
+    @include breakpoint(991) {
+        width: 100%;
+    }
+
+    .lecture-title {
+        display: flex;
+        width: 100%;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        background: #f1f1f1;
+        border-radius: 2px;
+        border: 1px solid #ece9e9;
+    }
+    &__info {
+        display: flex;
+        width: calc(100% - 30px);
+        padding-left: 10px;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon {
+        display: flex;
+        width: 30px;
+        padding-left: 6px;
+
+        align-items: center;
+    }
+    h4 {
+        font-family: $defaultFont;
+        font-size: 17px;
+        font-weight: 400;
+
+        color: #000;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        > li {
+            padding: 10px 20px;
+
+            &:first-child {
+                border-top: 1px solid #ddd;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid #ddd;
+            }
+            svg {
+                margin-right: 10px;
+                height: 1.9em;
+                font-size: 10px;
+
+                color: $orange;
+            }
+        }
+    }
+    strong {
+        font-family: $font-family-sans;
+        font-size: 11px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #7d7d7d;
+    }
+    span {
+        display: block;
+        width: 20px;
+        height: 20px;
+
+        line-height: 20px;
+
+        text-align: center;
+
+        border-radius: 50%;
+        background: $newcolor2;
+    }
+    svg {
+        margin-left: 1px;
+
+        font-size: 7px;
+        height: 1.9em;
+        color: #fff;
+    }
+}

@@ -1,0 +1,46 @@
+/* ==================================
+Breadcrumb
+=================================== */
+.breadcrumb {
+    padding: 5px 0;
+    margin: -2px 0 0 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #efe9e9;
+
+    ul {
+        margin: 0;
+        > li {
+            position: relative;
+
+            display: inline-block;
+
+
+            &:not(:last-child) {
+                &:after {
+                    display: inline-block;
+                    padding: 0 5px;
+
+                    content: "»";
+
+                    color: #969798;
+                }
+            }
+            a {
+                font-size: 16px;
+
+                color: $primaryColor;
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: #222;
+                }
+            }
+            span {
+                color: #949393;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/* ==================================
+Pagination 
+=================================== */
+.pagination {
+    .page-item {
+        &.active {
+            a.page-link {
+                border-color: $darkerColor;
+                background: $darkerColor;
+
+                &:hover,
+                &:focus {
+                    border-color: $primaryColor;
+                    background: $primaryColor;
+                    box-shadow: none;
+                }
+            }
+        }
+        a {
+            color: $darkerColor;
+        }
+    }
+}

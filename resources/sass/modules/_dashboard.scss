@@ -1,0 +1,98 @@
+/* ==================================
+Dashboard 
+=================================== */
+.profile-content__links ul li {
+    display: inline-block;
+    margin-right: 7px;
+}
+.show-profile i {
+    display: inline-block;
+    width: 21px;
+    height: 30px;
+
+    font-size: 11px;
+    line-height: 28px;
+
+    text-align: center;
+
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+.show-profile .btn {
+    width: 60px;
+    height: auto;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+    text-transform: unset;
+
+    color: #fff;
+}
+.main-profile-area hr {
+    border-top: 1px dotted #ddd;
+}
+.main-profile-area {
+    background: #f5f5fa;
+}
+.sidebar {
+    max-width: 270px;
+    margin-bottom: 40px;
+
+    .widget > {
+        ul {
+            li {
+                a {
+                    color: $newcolor1;
+                    &.router-link-active {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }   
+    
+}
+.dashboard-area .row {
+    margin-right: -3px;
+    margin-left: -3px;
+}
+.dashboard-area .row > div {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.profile-content {
+    padding: 5rem 0;
+}
+.show-profile {
+    color: #b2b2b7;
+}
+.main-profile-area .news-heading {
+    font-family: "Roboto", sans-serif;
+
+    color: #222f3f;
+}
+.main-profile-area .news-heading i {
+    color: #d6d3d2;
+}
+
+@include breakpoint(767) {
+    .profile-content {
+        padding: 20px 0;
+    }
+    .main-profile-area .sidebar {
+        max-width: 100%;
+        margin: 0;
+    }
+    .sidebar-links ul li {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .main-profile-area  ul li {
+        margin-bottom: 5px;
+    }
+    .sidebar-links {
+        text-align: center;
+    }
+}

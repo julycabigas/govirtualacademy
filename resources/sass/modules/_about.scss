@@ -1,0 +1,84 @@
+  .page-about-landing h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .page-about-landing .bg-overlay {
+    background: url(images/about/va-top.jpg) center center / cover no-repeat;
+  }
+  .page-about-landing .module {
+    padding-top: 70px;
+    text-align: center;
+  }
+  .page-about-landing .intro-start {
+    padding-top: 50px;
+  }
+  .page-about-landing .module .container {
+      max-width: 900px;
+  }
+  .page-about-landing .course-outline-area {
+      background: transparent;
+  }
+  .page-about-landing.text-center {
+    text-align: center;
+  }
+  .page-about-landing section.intro {
+      text-align: center;
+  
+  }
+  .page-about-landing .intro p {
+    margin-top: 20px;
+  }
+  .page-about-landing span {
+    color: orange;
+  }
+  .page-about-landing .about-company {
+    text-align: center;
+  }
+  .page-about-landing .about-company h2 {
+    font-weight: bold;
+  }
+  .page-about-landing .list {
+      text-align: left;
+      max-width: 500px;
+      margin: 50px auto 0;
+  }
+  .page-about-landing .list ul {
+    list-style: none;
+  }
+  .page-about-landing .list ul li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 8px;
+  }
+  .page-about-landing .why h2 {
+    font-weight: 700;
+  }
+  .page-about-landing .list li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background: url(images/about/icon.png) center center / cover no-repeat;
+  
+  }
+  .page-about-landing .row {
+    margin-top: 20px;
+  }
+  .page-about-landing .assistant {
+    text-align: center;
+  }
+  
+  .page-about-landing .assistant h6 {
+    margin-top: 20px;
+
+  }
+  .page-about-landing .checkout-section {
+    background: transparent;
+  }
+  .proof-of-payment img {
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 2px 20px #ddd;
+  }

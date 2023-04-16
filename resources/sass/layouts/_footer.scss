@@ -1,0 +1,245 @@
+/** Footer **/
+.site-footer {
+    position: relative;
+
+    background: #020c14;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        width: 100%;
+        height: 100%;
+
+        content: "";
+
+        /* background: url("/images/theme/banner-bg-v2.png") center center / cover no-repeat;
+*/
+    }
+    .container {
+        position: relative;
+        z-index: 5;
+    }
+}
+.footer-top-area {
+    position: relative;
+
+    padding: 40px 0;
+
+    color: #fff;
+    background: $newcolor1;
+
+    @include breakpoint(767) {
+        padding: 20px 0;
+
+        text-align: center;
+
+        .text-right {
+            padding-top: 10px;
+
+            text-align: center !important;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    h2 {
+        margin: 0;
+
+        font-size: 22px;
+        font-weight: 600;
+
+        color: #fff;
+    }
+    p {
+        color: #7e8184;
+    }
+    .row {
+        align-items: center;
+    }
+
+    .btn {
+        color: #fff;
+    }
+}
+.footer-widget {
+    > .footer-title {
+        margin: 0 0 20px;
+
+        font-size: 15px;
+        font-weight: 600;
+
+        text-transform: uppercase;
+
+        color: $primaryColor;
+
+        @include breakpoint(767) {
+            margin-bottom: 10px;
+        }
+    }
+    > ul {
+        > li {
+            margin-bottom: 5px;
+
+            text-transform: capitalize;
+
+            @include breakpoint(767) {
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+            a {
+                color: #fff;
+                &:hover {
+                    text-decoration: none;
+
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
+.footer-widgets-area {
+    padding: 0 0 40px;
+    position: relative;
+
+    background: url(/images/home/world.png) center center / contain no-repeat;
+
+    p {
+        color: #fff;
+    }
+    
+    @include breakpoint(767) {
+        padding: 0 0 10px;
+    }
+    .spacing {
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin-bottom: 70px;
+
+        @include breakpoint(767) {
+            margin-bottom: 20px;
+        }
+    }
+    .site-logo {
+        @include breakpoint(767) {
+            margin: 0;
+        }
+    }
+}
+.footer-copyright-area {
+    padding: 15px 0;
+
+    color: #fff;
+}
+.footer-newsletter {
+    > p {
+        margin-bottom: 10px;
+
+        color: #7e8184;
+
+        @include breakpoint(767) {
+            margin-bottom: 10px;
+        }
+    }
+}
+.newsletter-form .form-group {
+    border: 1px solid #425663;
+}
+.newsletter-form .form-group,
+.product-search-form .form-group {
+    position: relative;
+
+    height: 50px;
+    padding: 0 5px;
+    margin-bottom: 0;
+
+    border-radius: 10px;
+}
+.newsletter-form .form-group > .form-control,
+.product-search-form .form-group > .form-controllar {
+    float: left;
+    width: calc(100% - 150px);
+    height: 50px;
+    padding: 0 10px;
+
+    border: 0 solid;
+    border-radius: inherit;
+    background-color: transparent;
+
+    @include breakpoint(390) {
+        width: calc(100% - 80px);
+        padding-bottom: 10px;
+    }
+    ;
+}
+.newsletter-form .form-group > .btn-default,
+.product-search-form .form-group > .btn-default {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+    width: 150px;
+    padding: 10px 35px;
+
+    line-height: inherit;
+
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 4px;
+
+    @include breakpoint(390) {
+        width: 80px;
+        padding: 15px 5px;
+    }
+}
+.newsletter-form input:focus {
+    color: #222;
+    outline: none;
+    box-shadow: none;
+}
+.footer-widget-info {
+    p {
+        color: #7e8184;
+        margin-top: 30px;
+        padding-right: 30px;
+        font-weight: 400;
+        font-size: 15px;
+
+        @include breakpoint(767) {
+            margin-bottom: 30px;
+        }
+    }
+}
+.footer-widget-contact {
+    p {
+        color: #7e8184;
+    }
+}
+.footer-widget-social {
+    margin-top: 30px;
+    li {
+        display: inline-block;
+
+        @include breakpoint(767) {
+            margin-right: 10px;
+        }
+    }
+    img {
+        max-width: 24px;
+        height: 24px;
+    }
+
+}
+.copyright {
+    padding: 20px 0 10px 0;
+    font-size: 14px;
+    color: #87898a;
+    border-top: 1px solid #0e2431;
+}

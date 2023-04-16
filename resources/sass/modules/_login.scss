@@ -1,0 +1,28 @@
+/* ==================================
+Login
+=================================== */
+.login-section {
+    
+    padding: 70px 0;
+
+    @include breakpoint(767) {
+        padding: 30px 0;
+    }
+}
+.custom-content-area {
+    &.row {
+        margin: 0 auto;
+    }
+    .text-block {
+        padding-left: 60px;
+
+        line-height: 2;
+
+        @include breakpoint(767) {
+            padding: 0;
+        }
+        p {
+            color: #777;
+        }
+    }
+}

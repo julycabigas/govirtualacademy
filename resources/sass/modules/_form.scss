@@ -1,0 +1,49 @@
+/* ==================================
+Form
+=================================== */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    height: 42px;
+    padding: 0 10px;
+    border: 1px solid #040d13;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+input {
+    &[type="submit"] {
+        width: 100%;
+        height: 42px;
+        max-width: 150px;
+
+        border-bottom: 3px solid #d43a31;
+
+        &:focus,
+        &:active {
+            background: $darkerColor;
+            box-shadow: none;
+        }
+    }
+}
+input[type="file"] {
+    box-shadow: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    text-align: left;
+}
+select {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #040d13;
+    background: #fff;
+}

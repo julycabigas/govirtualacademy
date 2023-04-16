@@ -1,0 +1,56 @@
+/* ==================================
+Carousel
+=================================== */
+.carousel {
+    position: relative;
+    .arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+
+        width: 32px;
+        height: 32px;
+
+        line-height: 32px;
+
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        text-align: center;
+
+        border: 1px solid#e2e0e0;
+        border-radius: 50%;
+        background: #fff;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+
+        &.next {
+            right: -30px;
+
+            @include breakpoint(1500) {
+                right: -8px;
+            }
+
+            svg {
+                margin-right: -2px;
+            }
+        }
+
+        &.prev {
+            left: -30px;
+
+            @include breakpoint(1500) {
+                left: -8px;
+            }
+
+            svg {
+                margin-left: -2px;
+            }
+        }
+        svg {
+            line-height: 32px;
+        }
+    }
+}

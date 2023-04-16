@@ -1,0 +1,19 @@
+/* ==================================
+Testimony 
+=================================== */
+.single-testimony {
+    text-align: center;
+    .testimony-img {
+        margin: 10px auto;
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+        img {
+            width: 120px;
+        }
+    }
+    strong {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}

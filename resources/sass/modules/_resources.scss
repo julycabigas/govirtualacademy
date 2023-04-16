@@ -1,0 +1,37 @@
+
+.resource-nfo h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    color: #062b48;
+    font-weight: 700;
+}
+.single-resource {
+    padding: 14px;
+    background: #fdfdfd;
+    border-radius: 5px;
+    border: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+
+    p {
+       margin: 0;
+    }
+    h4 {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    button.btn.btn-drop {
+        background: transparent !important;
+        font-size: 15px;
+        padding: 5px;
+        padding: 0;
+        height: auto;
+        color: #062b48;
+    }
+    div {
+        color: #868282;
+    }
+}

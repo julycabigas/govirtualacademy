@@ -1,0 +1,101 @@
+/* ==================================
+Button 
+=================================== */
+input[type="submit"] {
+    &.btn {
+        font-family: $font-family-sans;
+        font-weight: 600;
+        line-height: 1;
+
+        border-radius: 5px;
+    }
+}
+.btn {
+    min-width: 90px;
+    padding: 8px 15px;
+
+    font-family: $font-family-sans;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+        border-color: $darkColor;
+        outline: none;
+        background: $darkColor;
+        box-shadow: none;
+    }
+    &-custom {
+        min-width: 58px;
+        padding: 5px 8px;
+    }
+    &.inactive {
+        border: 0;
+        background: #000;
+    }
+
+    &.disabled, &:disabled {
+        color: #fff;
+        background-color: #222f3f;
+        border-color: #222f3f
+    }
+}
+.btn-default {
+    padding: 15px 35px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #fff;
+    color: #fff;
+    border: 1px solid $darkerColor;
+    border-radius: 30px;
+    background-color: $darkerColor;
+}
+.btn-info {
+    border-color: $primaryColor;
+    background: $primaryColor;
+}
+.btn-outline {
+    border: 1px solid #e4dddd;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+.btn-wide {
+    width: 100%;
+}
+.btn-primary {
+    color: #fff !important;
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+.btn-tertiary {
+    color: #fff !important;
+    border-color: $newcolor3;
+    background-color: $newcolor3;
+}
+.btn-secondary,
+.btn-darker {
+    color: #fff !important;
+    border-color: $darkerColor;
+    background-color: $darkerColor;
+}
+.btn-success {
+    border-color: $darkerColor;
+    background-color: $darkerColor;
+}
+.btn-rounded {
+    border-radius: 25px;
+}
+.btn-secondary,
+.btn-success {
+    color: #fff;
+}
+.btn-cancel {
+    border: 1px solid #222f3f;
+}

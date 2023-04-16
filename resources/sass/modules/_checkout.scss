@@ -1,0 +1,99 @@
+/* ==================================
+Checkout
+=================================== */
+.checkout-section {
+    min-height: 450px;
+
+    background: $ligthBgColor;
+    h1 {
+        font-size: 22px;
+
+        color: #f85b52;
+    }
+    input:not([type="submit"]),
+    select {
+        height: 45px;
+        margin-bottom: 25px;
+        border: 0;
+        background: #ffffff;
+        box-shadow: none;
+        border-radius: 0;
+        border: 1px solid #4a4848;
+
+        &:focus,
+        &:cover {
+            outline: none;
+        }
+    }
+    .card {
+        background: transparent;
+    }
+    .card-header {
+        padding: 0;
+        margin-bottom: 0 !important;
+
+        button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 20px;
+            color: #222f3f;
+            border: 1px solid #011a29;
+            border-radius: 0;
+            background: #fff;
+
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                box-shadow: none;
+            }
+        }
+    }
+    .card-body {
+        padding: 30px 20px;
+        font-size: 18px;
+        background: rgba(253, 242, 241, 1);
+        box-shadow: none;
+        border: 1px solid #222;
+    }
+    .table {
+        tr {
+            th {
+                color: #fff;
+                background-color: #222f3f;
+            }
+        }
+    }
+}
+#grandtotal {
+    padding: 8px 4px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+
+    border-top: 1px dotted #ddd;
+
+    span {
+        > span {
+            color: $primaryColor;
+        }
+    }
+}
+#accordionPayment {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    > .card {
+        width: 100%;
+        margin-bottom: 5px;
+
+        border: 0;
+    }
+}
+.accordion .card:not(:first-of-type) .card-header:first-child {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}

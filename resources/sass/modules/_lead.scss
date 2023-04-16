@@ -1,0 +1,75 @@
+/* ==================================
+Lead
+=================================== */
+.leads {
+    padding: 60px 0 30px 0;
+
+    @include breakpoint(560) {
+        padding: 45px 0 30px 0;
+    }
+
+    position: relative;
+    background: $newcolor1;
+
+    .row {
+        margin: 0 auto;
+
+        > .col {
+            @include breakpoint(520) {
+                max-width: 100%;
+                margin-bottom: 25px;
+
+                flex-basis: auto;
+            }
+        }
+    }
+    .single-lead {
+        position: relative;
+        z-index: 3;
+        strong {
+            display: block;
+            font-family: $font-family-sans-serif;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+            line-height: 1;
+
+            color: $primaryColor;
+        }
+        span {
+            color: #fff;
+            @include breakpoint(530) {
+                display: block;
+            }
+        }
+    }
+}
+
+.single-lead {
+    display: flex;
+
+    @include breakpoint(530) {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    p {
+        padding-left: 15px;
+
+        @include breakpoint(530) {
+            width: 100%;
+            padding-top: 11px;
+            padding-left: 0;
+            margin: 0;
+
+            text-align: center;
+        }
+    }
+    &__image {
+        width: 50px;
+
+        @include breakpoint(500) {
+            width: 30px;
+        }
+    }
+}

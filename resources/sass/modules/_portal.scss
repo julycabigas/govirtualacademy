@@ -1,0 +1,342 @@
+.main-portal {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__sidebar {
+        width: 350px;
+        max-height: 700px;
+        overflow-y: scroll;
+
+        @include breakpoint(991) {
+            width: 100%;
+            max-height: 400px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        @include breakpoint(599) {
+            width: 100%;
+            max-height: 100px;
+            overflow-y: scroll;
+        }
+    }
+    &__content {
+        width: calc(100% - 350px);
+        padding-left: 30px;
+
+        @include breakpoint(991) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .single-panel {
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px #efefef;
+        display: flex;
+        h2 {
+            float: left;
+            font-size: 1rem;
+            flex: 1;
+            color: $newcolor2;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0;
+            font-weight: 400;
+            flex: 11;
+            color: $newcolor1;
+        }
+        svg {
+            flex: 1;
+            height: 12px;
+            line-height: 22px;
+            margin-top: 6px;
+            color: #adadad;
+        }
+
+        &:hover,
+        &.active {
+            cursor: pointer;
+            background: $newcolor1;
+            h3 {
+                color: #fff;
+            }
+            svg {
+                color: #fff;
+            }
+        }
+
+    }
+    #tab-portal {
+        li a {
+            font-family: $font-family-sans-serif;
+            color: $newcolor1;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 8px 20px;
+            border-radius: 0;
+
+            svg {
+                margin-left: 10px;
+                width: 20px;
+                color: $newcolor1;
+            }
+            &.active,
+            &:hover {
+                color: $newcolor1;
+                background-color: #ffffff;
+                border: 1px solid #fff;
+
+                svg {
+                    color: $newcolor2;
+                }
+                
+            }
+        }
+    }
+    .tab-content {
+        background: #fff;
+        padding: 20px 20px 40px;
+    }
+    .lesson-single-view .single-course {
+        background: transparent;
+    }
+    .inner-task {
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+    #accordionTask {
+        
+        button {
+            padding: 10px 20px;
+            display: block;
+            min-width: 100%;
+            text-align: left;
+            color: $newcolor1;
+            border-radius: 0;
+            margin-right: 10px;
+            font-weight: 500;
+            border: 0 !important;
+            &:hover,
+            &:active,
+            &:focus {
+                background: $newcolor1;
+                color: #fff;
+                text-decoration: none;
+                border-color: #fff !important;
+                box-shadow: none;
+            }
+            strong {
+                color: $newcolor2;
+                min-width: 80px;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+    .accordion {
+        .card {
+            &.underline {
+                text-decoration: line-through !important;
+            }
+        }
+        .card-header {
+            padding: 0;
+
+            h2 {
+                border:1px solid #f5f5f5;
+            }
+        }
+    }
+    .task-note {
+        padding-top: 5px;
+        border-top: 1px dashed #f1f0f0;
+
+        p {
+            margin: 0;
+        }
+    }
+    .video-player {
+        border: 1px solid #f3f3f3;
+        position: relative;
+        overflow: hidden;
+    }
+    .entries {
+        border-top: 1px solid #f1f1f1;
+        padding-top: 6px;
+    }
+    .single-entry {
+        padding: 10px 0px;
+        margin-bottom: 7px;
+        background: #fff;
+
+        strong {
+            display: inline-block;
+            font-size: 14px !important;
+        }
+    }
+    .status .alert {
+        padding: 1px 5px;
+        font-size: 13px;
+        display: inline-block;
+        margin: 0;
+    }
+   
+}
+
+#popupForm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 99999;
+    display: none;
+
+    &.show {
+        display: block;
+    }
+
+    button.close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #ff3026;
+        color: #fff;
+        border: 0;
+        text-transform: uppercase;
+        font-size: 13px;
+        border-radius: 2px;
+    }
+    form {
+        max-width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #fff;
+        padding:40px 20px;
+
+        input[type="submit"] {
+            margin-top: 10px;
+            float: right;
+        }
+        @include breakpoint(700) {
+            max-width: 400px;
+        }
+        @include breakpoint(500) {
+            max-width: 300px;
+        }
+    }
+}
+.add-entry-btn {
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid $newcolor2;
+    color: $newcolor2;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+#accordionExercise  {
+    .card-header {
+        background: #fff;
+        border: 0;
+        border-radius: 0;
+
+        &:hover,
+        &:active, 
+        &:focus {
+            border-color: #e0e8ef;
+        }
+
+        button {
+            display: block;
+            min-width: 100%;
+            text-align: left;
+            color: #000;
+            background: #fbfbfb;
+            border-radius: 0;
+            font-weight: 500;
+
+            small {
+                float: right;
+            }
+            
+            &:hover,
+            &:active, 
+            &:focus {
+                border-color: #e0e8ef;
+            }
+        }
+    }
+    .card-body {
+        border: 1px solid #f3f3f3;
+        background: #fff;
+        margin-top: -2px;
+    }
+    .card {
+        border: 0;
+        margin-bottom: 20px;
+
+        &:hover {
+            border: 0;
+        }
+    }
+    .collapse.show {
+        background: #fbfbfb;
+        border: 1px solid #fff;
+    }
+
+}
+.content-exercise {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+.content-header {
+    border-bottom: 1px solid #efecec;
+    padding-bottom: 4px;
+    padding: 5px 0;
+    h2 {
+        font-size: 16px;
+        small {
+            float: right;
+            color: #bfbebe;
+            font-size: 12px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+     
+    }
+}
+.exercise-inner {
+    .exercise-info {
+        background: #f5f5f5;
+        padding: 10px;
+
+        br {
+            display: none;
+        }
+    }
+    .desc {
+        padding: 10px;
+    }
+}

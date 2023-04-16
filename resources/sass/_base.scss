@@ -1,0 +1,114 @@
+body {
+    font-weight: 400;
+    font-family: $font-body;
+    background: #fff;
+}
+ul {
+    padding-left: 15px;
+}
+a,
+a.router-link-exact-active {
+    color: $orange;
+
+    &.dark {
+        color: $darkerColor;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+
+        color: $darkColor;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-sans;
+}
+.content {
+    min-height: 400px;
+
+    @include breakpoint(991) {
+        margin-top: 0;
+    }
+}
+.img-fluid {
+    width: 100%;
+}
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .04);
+}
+.d-padding {
+    padding: 50px 0;
+}
+.gray-bg {
+    background: $lightColor;
+}
+.page-content {
+    min-height: 400px;
+}
+#main {
+    overflow: hidden;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+#mce-responses {
+    padding: 5px 0;
+
+    text-align: center;
+
+    color: #c4c6c7;
+}
+.sec-title h2 {
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+.loading span {
+    display: block;
+    padding: 20px 0;
+
+    font-size: 18px;
+}
+.col-6 {
+    @include breakpoint(480) {
+        width: 100%;
+        max-width: 100%;
+
+        flex: 0 0 100%;
+    }
+}
+.exam-choices p {
+    display: inline;
+    margin: 0;
+}
+.display-block {
+    display: block;
+}
+.font-size-big {
+    font-size: 1.3rem;
+}
+.font-size-bigger {
+    font-size: 2rem;
+}
+.font-size-biggest {
+    font-size: 3rem;
+}
+.auto-container {
+    max-width: 1500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.home-content .container {
+    max-width: 1500px;
+}
+.content-wrap {
+    background-color: #f1f1f1 !important;
+}

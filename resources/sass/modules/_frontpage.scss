@@ -1,0 +1,113 @@
+/* ==================================
+Frontpage
+=================================== */
+.slider-banner-section {
+     background: url(images/theme/banner-v.jpg) center center / cover no-repeat;
+     min-height: 600px;
+     display: flex;
+     align-items: center;
+     margin-top: -1px;
+
+    @include breakpoint(767) {
+       min-height: 450px;
+    }
+    @include breakpoint(599) {
+        min-height: 350px;
+    }
+    .text-block {
+        padding: 0 20px 0 5px;
+        margin: 0 auto
+    }
+     h1 {
+        font-size: 60px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: $darkerColor;
+
+        @include breakpoint(767) {
+            font-size: 40px;
+        }
+        @include breakpoint(500) {
+            font-size: 35px;
+        }
+        span {
+            font-family: $defaultFont;
+        }
+     }
+     p {
+         color: #fff;
+         font-size: 1.3em;
+         font-weight: 600;
+     }
+     #carousel_w08wkgw8d1d {
+        padding: 0 10px;
+    }
+}
+.short-info-area {
+    padding: 70px 0;
+
+    @include breakpoint(767) {
+        padding: 50px 0;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+
+        color: $darkerColor;
+
+        @include breakpoint(991) {
+            margin-bottom: 10px;
+
+            font-size: 50px;
+        }
+        .highlight {
+            position: relative;
+
+            display: block;
+
+            color: $orange;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: -50px;
+                z-index: -1;
+
+                display: none;
+                width: 200px;
+                height: 100%;
+
+                content: "";
+
+                background: $darkColor;
+            }
+            > span {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.testimonial-area {
+    padding: 40px 0 15px 0;
+
+    background: #fff;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    background: $darkerColor !important;
+
+    &:hover,
+    &:focus {
+        background: $primaryColor !important;
+    }
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #222f3f !important;
+}

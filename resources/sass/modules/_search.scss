@@ -1,0 +1,48 @@
+/* ==================================
+Search 
+=================================== */
+.site-header-bottom {
+    position: relative;
+    z-index: 10;
+}
+.search-courses-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    transition: top .5s ease;
+
+    background: rgba(34, 47, 63, .9);
+    &.hide {
+        top: -300px;
+    }
+    .search-inner {
+        padding: 10px 0;
+    }
+
+    .search-item {
+        padding: 10px 0;
+
+        &:not(:last-child) {
+            border-bottom: 1px dotted #465263;
+        }
+    }
+    h4 {
+        margin: 0;
+
+        font-size: 15px;
+
+        a {
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+
+                color: #fff;
+            }
+        }
+    }
+}
